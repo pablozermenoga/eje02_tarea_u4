@@ -1,0 +1,15 @@
+<h2>Imagenes</h2>
+
+  <div *ngFor="let iman of images">
+      
+      <h3>
+          <a [title]="'Details '+ iman.name">
+              {{iman.name}}
+          </a>
+
+      </h3>
+      <p *ngIf="iman.description">
+          Descripción:{{iman.description}}
+      </p>
+      
+  </div>
