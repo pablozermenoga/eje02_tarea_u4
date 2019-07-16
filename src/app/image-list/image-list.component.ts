@@ -7,23 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageListComponent implements OnInit {
   public images;
-  
+
   constructor() { 
     this.images = [
       {
-        name: 'Phone XL',
-        price: 799,
-        description: 'A large phone with one of the best screens'
+        name: 'THE KING OF FIGTHERS',
+        id:0,
+        description: ' JUEGO DE PELEAS DE LA INFANCIA',
+        img: '',
+        rank: "*****"
       },
       {
-        name: 'Phone Mini',
-        price: 699,
-        description: 'A great phone with one of the best cameras'
-      },
-      {
-        name: 'Phone Standard',
-        price: 299,
-        description: ''
+        name: 'FIFA 2019',
+        id:1,
+        description: ' JUEGO DE FUTBOL PARA CONSOLAS CON XBOX, PLAY STATION, ETC.',
+        img:'',
+        rank: " *****"
       }
     ];
   }
