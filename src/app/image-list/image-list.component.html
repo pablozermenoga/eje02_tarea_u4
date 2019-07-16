@@ -1,6 +1,6 @@
 <h2>Imagenes</h2>
-
-  <div *ngFor="let iman of images">
+<hr>
+  <div *ngFor="let iman of images; index as id">
       
       <h3>
           <a [title]="'Details '+ iman.name">
@@ -8,13 +8,15 @@
           </a>
 
       </h3>
+      <p>
+        Id: {{iman.id}}
+      </p>
       <p *ngIf="iman.description">
           Descripción:{{iman.description}}
       </p>
-      <img width="300" alt="Logo fifa" src="https://as00.epimg.net/meristation/imagenes/2019/02/11/noticias/1549866770_395456_1549866856_noticia_normal.jpg">
-      <p *ngIf="iman.rank">
-        Rank:{{iman.rank}}
-      </p>
-      
+      <p>
+        <img width="400" src="{{iman.img}}"><br>
+        Rank: <i class="material-icons">{{iman.rank}}</i>
+      </p>  
+      <hr>
   </div>
-  <!--<img width="300" alt="Logo fifa" src="https://i.blogs.es/483a1e/a8ee94c79d513f7a94dc05fff2579869/450_1000.jpg"> -->
